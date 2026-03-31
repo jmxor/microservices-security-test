@@ -1,0 +1,15 @@
+server:
+  port: 8443
+  ssl:
+    enabled: true
+    certificate: /certs/api.local.test.pem
+    certificate-private-key: /certs/api.local.test-key.pem
+
+spring:
+  application:
+    name: api-server
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://keycloak.local.test/realms/myrealm
