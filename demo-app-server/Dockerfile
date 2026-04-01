@@ -23,7 +23,7 @@ WORKDIR /app
 COPY --from=builder /workspace/target/*.jar app.jar
 
 # (Optional) expose the default Spring Boot port
-EXPOSE 8080
+EXPOSE 8444
 
 # Run as non-root: uncomment and adjust if desired and available in the base image
 # RUN groupadd -r app && useradd -r -g app app && chown -R app:app /app
