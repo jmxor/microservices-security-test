@@ -1,5 +1,9 @@
 # Project setup
 
+The aim of project is to provide an environment for two spring servers to
+communicate that is as close a spossible to a production deployment while still
+being entirely local. This includes full SSL/HTTPS, CORS and a reverse proxy.
+
 ## Generate local certificates
 
 TODO
